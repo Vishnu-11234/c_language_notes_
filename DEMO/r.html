@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>DAY 2</title>
+  <link rel="stylesheet" href="./r.css">
+  <style>
+
+    
+  </style>
+  
+</head>
+<body>
+ <table border="solid  " cellspacing="7" class="nv" align="center" >
+    
+    <tr class="pv">
+        <td colspan="4" id="display">0</td>
+    
+    </tr>
+ 
+    <tr id="pd" >
+        <td id="w"><input type="button" value="AC"  onclick="u_clear()"></td>
+        <td><input type="button" value="⌫"></td>
+        <td><input type="button" value="%" onclick="disp('%')"></td>
+        <td><input type="button" value="/" onclick="disp('/')"></td>
+    </tr>
+    
+    <tr class="kv">
+        <td><input type="button" value="7" onclick="disp(7)"></td>
+        <td><input type="button" value="8" onclick="disp(8)"></td>
+        <td><input type="button" value="9"  onclick="disp(9)"></td>
+        <td id="rv" ><input type="button" value="" onclick="disp('')"></td>
+    </tr>
+
+    <tr class="kv">
+        <td><input type="button" value="4" onclick="disp(4)"></td>
+        <td><input type="button" value="5" onclick="disp(5)"></td>
+        <td><input type="button" value="6" onclick="disp(6)"></td>
+        <td id="rv"><input type="button" value="-"onclick="disp('-')"></td>
+    </tr>
+
+    <tr class="kv">
+        <td><input type="button" value="1"  onclick="disp(1)"></td>
+        <td><input type="button" value="2"  onclick="disp(2)"></td>
+        <td><input type="button" value="3"  onclick="disp(3)"></td>
+        <td id="rv"><input type="button" value="+"onclick="disp('+')"></td>
+    </tr>
+
+     
+    <tr class="kv">
+        <td><input type="button" value="00"  onclick="disp('00')"></td>
+        <td ><input type="button" value="0"  onclick="disp(0)"></td>
+
+        <td><input type="button" value="."></td>
+        <td id="tv"><input type="button" value="=" onclick="calc()"></td>
+    </tr>
+
+ </table>
+        <script src="./a.js"></script>
+</body>
+
+</html>

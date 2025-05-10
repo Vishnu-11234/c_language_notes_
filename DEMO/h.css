@@ -1,0 +1,50 @@
+
+
+.navbar {
+    background-color: #333;
+    padding: 15px;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+
+.section {
+    padding: 50px;
+    min-height: 300px;
+    color: white;
+}
+
+#s1 {
+    background-color: #4CAF50; 
+}
+
+#s2 {
+    background-color: #2196F3; 
+}
+
+#s3 {
+    background-color: #FF9800; 
+}
+
+#FOOTER {
+    background-color: #555; 
+    text-align: center;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

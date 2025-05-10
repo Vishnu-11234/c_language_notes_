@@ -1,0 +1,77 @@
+ .pv{
+    text-align: right;
+    background-color: rgb(44, 40, 40);
+    color: white;
+    border:solid blue 3px;
+    border-radius:20%;
+    font-size: 35px;
+    
+}
+.nv{
+    background-color:rgb(150, 210, 236);
+   border-radius: 15px;
+    text-align: center;
+    width: 250px;
+    height: 350px;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border:solid  5px;
+  color: rgb(26, 21, 21);
+  padding: 13px ;
+  
+}
+#pd{
+    
+    color: orangered;
+}
+#rv{
+    background-color:rgb(75, 72, 70) ;
+    color:rgb(241, 228, 228);
+    border-radius: 20%;
+    font-weight: bolder;
+}
+#tv{
+    background-color: rgb(76, 66, 71);
+    
+    border-radius: 30%;
+}
+.kv{
+   background-color: rgb(65, 68, 62);
+  border:solid rgb(101, 13, 86) 10px;
+  font-weight: 900;
+  color: antiquewhite;
+  border-radius: 50%;
+ 
+}
+table tr td{
+     width:30px;
+     height:45px;
+     border-radius: 15%;
+     border:solid white 3px;
+}
+#w{
+    background-color: red;
+    color: azure;
+    border-radius: 50%;
+    border:solid white 3px;
+}
+function display(data){
+   let disp = document.getElementById("display").innerHTML
+   console.log(disp)
+}
+display(10)
+function disp(a){
+    let data=document.getElementById("display")
+    data.innerHTML+=a
+}
+function u_clear(){
+    let data=document.getElementById("display")
+    data.innerHTML=0
+}
+function calc(){
+    let data=document.getElementById("display")
+    let expn=data.innerHTML
+    let res=eval(expn)
+    data.innerHTML=res
+}
+ 

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Data Entry</title>
+  <link rel="stylesheet" href="web.css" />
+</head>
+<body>
+
+  <h1>Student Data Entry</h1>
+
+  <form id="studentForm">
+    <input type="text" id="name" placeholder="Enter Name" required />
+    <input type="email" id="email" placeholder="Enter Email" required />
+    <input type="text" id="course" placeholder="Enter Course" required />
+    <button type="submit">Add Student</button>
+  </form>
+
+  <table id="studentTable">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Course</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Data will appear here -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>

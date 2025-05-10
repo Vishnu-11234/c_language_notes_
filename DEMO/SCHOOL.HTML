@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>C Language Notes</title>
+  <link rel="stylesheet" href="school.css" />
+</head>
+<body>
+  <header>
+    <h1>C Programming Notes</h1>
+    <p>Click a topic to view detailed notes and practice questions.</p>
+  </header>
+  <main>
+    <div class="topics">
+      <button onclick="showTopic('variables')">Variables</button>
+      <button onclick="showTopic('loops')">Loops</button>
+      <button onclick="showTopic('conditions')">Conditional Statements</button>
+      <button onclick="showTopic('functions')">Functions</button>
+      <button onclick="showTopic('arrays')">Arrays</button>
+      <button onclick="showTopic('pointers')">Pointers</button>
+      <button onclick="showTopic('structures')">Structures</button>
+      <button onclick="showTopic('files')">File Handling</button>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="page1.html">Page 1: Variables & Loops</a></li>
+          <li><a href="page2.html">Page 2: Conditional Statements & Functions</a></li>
+          <li><a href="page3.html">Page 3: Arrays & Pointers</a></li>
+          <li><a href="page4.html">Page 4: Structures & File Handling</a></li>
+          <!-- Google Link -->
+          <li><a href="https://www.google.com" target="_blank">Google</a></li>
+          <nav>
+            <ul class="nav-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="page1.html">Page 1: Variables & Loops</a></li>
+              <li><a href="page2.html">Page 2: Conditional Statements & Functions</a></li>
+              <li><a href="page3.html">Page 3: Arrays & Pointers</a></li>
+              <li><a href="page4.html">Page 4: Structures & File Handling</a></li>
+              <!-- Links to External Websites -->
+              <li><a href="https://www.google.com" target="_blank">Google</a></li>
+              <li><a href="https://www.hackerrank.com" target="_blank">HackerRank</a></li>
+              <li><a href="https://www.w3resource.com" target="_blank">W3Resource</a></li>
+              <li><a href="https://www.greekt
+          
+        </ul>
+      </nav>
+      
+    </div>
+
+    <div id="content" class="content-box">
+      <h2>Select a topic</h2>
+      <p>Notes and practice questions will appear here.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 C Notes Website. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function showTopic(topic) {
+      const content = document.getElementById("content");
+      let notes = "";
+      let practice = "";
+
+      switch (topic) {
+        case "variables":
+          notes = `
+            <h2>Variables & Data Types</h2>
+            <p>Variables are storage locations. Common types: <code>int</code>, <code>float</code>, <code>char</code>.</p>
+            <p>Example: <code>int age = 20;</code></p>
+          `;
+          practice = `
+            <h3>Practice:</h3>
+            <ul>
+              <li>Declare an integer and print it.</li>
+              <li>Use different data types in a program.</li>
+            </ul>
+          `;
+          break;
+        case "loops":
+          notes = `
+            <h2>Loops in C</h2>
+            <p>Loops execute a block repeatedly: <code>for</code>, <code>while</code>, <code>do-while</code>.</p>
+            <p>Example: <code>for(int i=0; i<5; i++) { printf("%d", i); }</code></p>
+            for Loop
+for loop in C programming is a repetition control structure that allows programmers to write a loop that will be executed a specific number of times. It enables programmers to perform n number of repetitions in a single line. for loop is entry-controlled loop, which means that the condition is checked before the loop’s body executes.
+
+Syntax
+
+for (initialization; condition; updation) { 
+     // body of for loop
+}
+The various parts of the for loop are:
+
+Initialization: Initialize the variable to some initial value.
+Test Condition: This specifies the test condition. If the condition evaluates to true, then body of the loop is executed. If evaluated false, loop is terminated.
+Update Expression: After the execution loop’s body, this expression increments/decrements the loop variable by some value.
+Body of Loop: Statements to repeat. Generally enclosed inside {} braces.
+          `;
+          practice = `
+            <h3>Practice:</h3>
+            <ul>
+              <li>Print 1 to 10 using a loop.</li>
+              <li>Sum of first n numbers using a loop.</li>
+            </ul>
+          `;
+          break;
+        case "conditions":
+          notes = `
+            <h2>Conditional Statements</h2>
+            <p>Use <code>if</code>, <code>else</code>, <code>else if</code> for decision making.</p>
+            <p>Example: <code>if (x > 0) { printf("Positive"); }</code></p>
+          `;
+          practice = `
+            <h3>Practice:</h3>
+            <ul>
+              <li>Check if a number is even or odd.</li>
+              <li>Find the largest of 3 numbers.</li>
+            </ul>
+          `;
+          break;
+        case "functions":
+          notes = `
+            <h2>Functions</h2>
+            <p>Functions allow code reuse. Syntax: <code>returnType functionName(params)</code></p>
+            <p>Example: <code>int add(int a, int b) { return a + b; }</code></p>
+          `;
+          practice = `
+            <h3>Practice:</h3>
+            <ul>
+              <li>Create a function to add two numbers.</li>
+              <li>Write a factorial function.</li>
+            </ul>
+          `;
+          break;
+        case "arrays":
+          notes = `
+            <h2>Arrays</h2>
+            <p>Array stores multiple values. Syntax: <code>int arr[5];</code></p>
+            <p>Access: <code>arr[0]</code> is first element.</p>
+          `;
+          practice = `
+            <h3>Practice:</h3>
+            <ul>
+              <li>Store and print 5 numbers.</li>
+              <li>Find max number in an array.</li>
+            </ul>
+          `;
+          break;
+        case "pointers":
+          notes = `
+            <h2>Pointers</h2>
+            <p>Pointers store addresses. Syntax: <code>int *p = &x;</code></p>
+            <p>Use <code>*</code> for dereferencing, <code>&</code> to get address.</p>
+          `;
+          practice = `
+            <h3>Practice:</h3>
+            <ul>
+              <li>Print the address and value of a variable using a pointer.</li>
+              <li>Swap two numbers using pointers.</li>
+            </ul>
+          `;
+          break;
+        case "structures":
+          notes = `
+            <h2>Structures</h2>
+            <p>Structures group different types under one name. Use <code>struct</code> keyword.</p>
+            <p>Example: <code>struct Student { int id; char name[20]; };</code></p>
+          `;
+          practice = `
+            <h3>Practice:</h3>
+            <ul>
+              <li>Create a structure for student details.</li>
+              <li>Store and display 3 student records.</li>
+            </ul>
+          `;
+          break;
+        case "files":
+          notes = `
+            <h2>File Handling</h2>
+            <p>Use <code>FILE</code> pointers and functions like <code>fopen</code>, <code>fprintf</code>, <code>fscanf</code>.</p>
+            <p>Example: <code>FILE *fp = fopen("data.txt", "w");</code></p>
+          `;
+          practice = `
+            <h3>Practice:</h3>
+            <ul>
+              <li>Write and read a file in C.</li>
+              <li>Append data to a file.</li>
+            </ul>
+          `;
+          break;
+        default:
+          notes = `<h2>No topic selected</h2>`;
+      }
+
+      content.innerHTML = notes + practice;
+    }
+  </script>
+</body>
+</html>

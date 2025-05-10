@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>welcome</h1>
+    <script>
+        let input1=window.prompt("enter  1 number:")
+        input1=parseInt(input1)
+        let input2=window.prompt("enter 2 number:")
+        input2=parseInt(input2)
+
+        let s=window.prompt("enter a arithmatic operation:")
+        
+        if(input2!=0){
+        if(s=="+"){
+            c=input1+input2
+            console.log(c)
+
+        }
+        else if(s=="-"){
+            c=input1-input2
+            console.log(c)
+
+        }
+        else if(s=="*"){
+            c=input1*input2
+            console.log(c)
+
+        }
+        else if(s=="/"){
+            c=input1/input2
+            console.log(c)
+
+        }
+        else{
+            console.log("give aappropriate operator")
+        }
+    }
+    else{
+        console.log("ZERODIVISION ERROR!")
+    }
+    </script>
+</body>
+</html>
